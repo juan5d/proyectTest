@@ -1,0 +1,56 @@
+<a routerLink="/" class="btn btn-success">Back</a>
+<div class="content">
+    <div class="form-group">
+        <label for="exampleInputEmail1">ID</label>
+        <input type="text" class="form-control" id="id" aria-describedby="idHelp" [(ngModel)]="id" placeholder="id">
+        <small id="idHelp" class="form-text text-muted">Escriba por favor una id.</small>
+      </div>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Nombre</label>
+      <input type="text" class="form-control" id="name" aria-describedby="nameHelp" [(ngModel)]="name" placeholder="Nombre">
+      <small id="nameHelp" class="form-text text-muted">Escriba por favor un nombre.</small>
+    </div>
+    
+      <div class="form-group">
+        <label for="exampleInputEmail1">Apellido</label>
+        <input type="text" class="form-control" id="email" aria-describedby="lastnameHelp " [(ngModel)]="lasname" placeholder="Apellid">
+        <small id="lastnameHelp" class="form-text text-muted">Escriba por favor un apellido.</small>
+      </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Email address</label>
+        <input type="text" class="form-control" id="last_name" aria-describedby="emailHelp" [(ngModel)]="email" placeholder="Correo">
+        <small id="emailHelp" class="form-text text-muted">Escriba por favor un email.</small>
+      </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Url Avatar</label>
+        <input type="text" class="form-control" id="url" aria-describedby="urlHelp" [(ngModel)]="url" placeholder="URL IMAGEN">
+        <small id="urlHelp" class="form-text text-muted">Escriba por favor una url.</small>
+      </div>
+      <button (click)="save()" class="btn btn-success">Guardar</button>
+      <button (click)="update()" class="btn btn-warning">Actualizar</button>
+      <button (click)="deleteData()" class="btn btn-danger">Eliminar</button>
+
+  <div class="container">
+    <div class="row">
+<table datatable class="table table-striped">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Avatar</th>
+        <th>First name</th>
+        <th>Last name</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let usuario of usuarios" >
+            <td>{{usuario.id}}</td>
+            <td><img src="{{usuario.avatar}}" alt=""></td>
+            <td>{{usuario.first_name}}</td>
+            <td>{{usuario.last_name}}</td>
+          </tr>
+    </tbody>
+  </table>
+</div>
+  </div>
+
+</div>
