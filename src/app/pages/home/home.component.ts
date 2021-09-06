@@ -6,12 +6,17 @@ import { Component, OnInit, Output} from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  @Output() urlImg1="https://1.bp.blogspot.com/-Bii3S69BdjQ/VtdOpIi4aoI/AAAAAAAABlk/F0z23Yr59f0/s640/cover.jpg";
-  @Output() urlImg2="https://1.bp.blogspot.com/-Bii3S69BdjQ/VtdOpIi4aoI/AAAAAAAABlk/F0z23Yr59f0/s640/cover.jpg";
-  @Output() urlImg3="https://1.bp.blogspot.com/-Bii3S69BdjQ/VtdOpIi4aoI/AAAAAAAABlk/F0z23Yr59f0/s640/cover.jpg";
- @Output() ruta1="/map";
- @Output()ruta2="/table";
- @Output() ruta3="/datos";
+ urlImg1="https://previews.123rf.com/images/tuktukdesign/tuktukdesign1709/tuktukdesign170900070/85693764-red-del-icono-del-icono-del-grupo-del-grupo-de-personas-y-el-trabajo-en-equipo-de-la-ilustraci%C3%B3n-de-.jpg";
+urlImg2="https://cdn.icon-icons.com/icons2/632/PNG/512/users_icon-icons.com_57999.png ";
+ urlImg3="https://previews.123rf.com/images/lefttime/lefttime1711/lefttime171100019/89092993-lupa-en-busca-de-icono-de-personas-concepto-de-s%C3%ADmbolo-de-b%C3%BAsqueda-de-empleado-caza-de-talentos-sele.jpg";
+ ruta1="/map";
+ruta2="/table";
+ ruta3="/datos";
+titulo1="Mapa";
+titulo2="Tabla Json";
+titulo3="Consumo de Api";
+
+
   constructor() { }
 
   ngOnInit(): void {

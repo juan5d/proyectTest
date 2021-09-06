@@ -8,6 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
 export class CartsComponent implements OnInit {
   @Input() img:any;
   @Input() ruta:any;
+  @Input() titulo:any;
     constructor() { }
   
     ngOnInit(): void {
